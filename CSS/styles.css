@@ -1,3 +1,134 @@
+/* палітра кольорів
+Основной колір текста #212121;
+Другорядний колір текста #757575;
+Акцентний колір #2196F3;
+Білий колір #FFFFFF;
+колір фона main #E5E5E5;
+колір фона #F5F4FA;
+колір фона темний для футера і героя #2F303A;
+колір з прорачністью на майл і тел в футері rgba(255, 255, 255, 0.6);
+*/
+
+:root {
+  --dark-logo-color: #000000;
+  --main-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --mainfone-color: #e5e5e5;
+  --fone-color: #f5f4fa;
+  --darkfone-color: #2f303a;
+  --contacts-color: rgba(255, 255, 255, 0.6);
+}
+
 body {
-  background-color: aquamarine;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.main-title {
+  display: none;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.logo-studio {
+  color: var(--dark-logo-color);
+}
+
+/* navigation */
+.navi-link {
+  color: #212121;
+}
+.navi-link:hover,
+.navi-link:focus {
+  color: var(--accent-color);
+}
+.navi-link.current {
+  color: var(--accent-color);
+}
+
+.auth-link {
+  color: var(--text-color);
+}
+.auth-link:hover,
+.auth-link:focus {
+  color: var(--accent-color);
+}
+
+/* HERO */
+.hero {
+  background-color: var(--darkfone-color);
+}
+.hero-title {
+  color: var(--white-color);
+}
+.hero-btn {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* features */
+
+.features-title {
+  color: var(--main-text-color);
+}
+.features-text {
+  color: var(--text-color);
+}
+
+/* team */
+.team {
+  background-color: var(--fone-color);
+}
+.team-text {
+  color: var(--text-color);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--darkfone-color);
+}
+
+.footer-web {
+  color: var(--accent-color);
+}
+.footer-studio {
+  color: var(--white-color);
+}
+.location {
+  color: var(--white-color);
+}
+.adr-link {
+  color: var(--contacts-color);
+}
+
+.portfolio-title {
+  display: none;
+}
+
+/* PORTFOLIO */
+
+.filter-btn {
+  color: var(--main-text-color);
+  background-color: var(--fone-color);
+}
+.filter-btn:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.card-title {
+  color: var(--main-text-color);
+}
+.card-text {
+  color: var(--text-color);
 }
